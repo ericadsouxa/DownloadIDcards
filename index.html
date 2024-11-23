@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ID Card Download</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2>SANJEEVANI FOUNDATION NIOS</h2>
+      </nav>
+
+      <p class="instructions">
+        <strong>Instructions:</strong>
+        <ul>
+          <li>Enter your <strong>Date of Birth (DOB)</strong> in the format <strong>DD-MM-YYYY</strong> to find your ID card.</li>
+          <li>If you entered the correct DOB, the <strong>Download ID Card</strong> button will appear.</li>
+          <li><strong style="color: red; font-weight: bold;">ALL THE BEST!</strong></li>
+        </ul>
+      </p>
+
+
+  <div class="container">
+    <h1>Student ID Card Download</h1>
+    <div class="input-section">
+      <label for="dob">Enter your Date of Birth:</label>
+      <input type="text" id="dob" placeholder="DD-MM-YYYY" />
+      <button onclick="checkDOB()">Submit</button>
+    </div>
+    <p id="error-message" class="error hidden"></p>
+    <div id="result-box" class="hidden">
+      <p><strong>Name:</strong> <span id="student-name"></span></p>
+      
+      <!-- Hardcoded download links -->
+      <div id="download-links">
+        <a id="angel-link" href= './assets/ANGELA__Student ID-CARD__.pdf' download>
+          <button>Download ANGEL's ID Card</button>
+        </a>
+        <a id="jackson-link" href='./assets/JACKSON__Student ID-CARD__.pdf'download>
+          <button>Download JACKSON's ID Card</button>
+        </a>
+        <a id="rafay-link" href= './assets/RAFAY__Student ID-CARD__.pdf' download>
+          <button>Download RAFAY's ID Card</button>
+        </a>
+        <a id="velentin-link" href= './assets/VELANTIN__Student ID-CARD__.pdf' download>
+          <button>Download VELENTIN's ID Card</button>
+        </a>
+        <a id="ishant-link" href= './assets/ISHANT__Student ID-CARD__.pdf' download>
+          <button>Download ISHANT's ID Card</button>
+        </a>
+        <a id="memon-link" href= './assets/MOHAMMED__Student ID-CARD__.pdf' download>
+          <button>Download MEMON's ID Card</button>
+        </a>
+        <a id="ayman-link" href= './assets/AYMAN__Student ID-CARD__.pdf' download>
+          <button>Download AYMAN's ID Card</button>
+        </a>
+        <a id="janvi-link" href= './assets/JANVI__Student ID-CARD__.pdf' download>
+          <button>Download JANVI's ID Card</button>
+        </a>
+        <a id="john-link" href= './assets/JOHN__Student ID-CARD__.pdf' download>
+          <button>Download JOHN's ID Card</button>
+        </a>
+        <a id="prajakta-link" href= './assets/PRAJKTA__Student ID-CARD__.pdf' download>
+            <button>Download PRAJAKTA's ID Card</button>
+        </a>
+        <a id="shweta-link" href= './assets/SHWETA__Student ID-CARD__.pdf' download>
+            <button>Download SHWETA's ID Card</button>
+        </a>
+        <a id="rutik-link" href='./assets/RUTIK__Student ID-CARD__.pdf' download>
+            <button>Download RUTIK's ID Card</button>
+        </a>
+          
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

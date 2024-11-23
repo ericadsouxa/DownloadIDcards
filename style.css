@@ -1,0 +1,178 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #f5f5f5; /* Subtle grey for a clean look */
+    color: #1a1a1a; /* Dark grey for better readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #007bff; /* NIOS blue */
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 50px; /* To prevent content overlap with the navbar */
+}
+/* Instructions Section */
+.instructions {
+    font-size: 20px;
+    color: #333;
+    margin-top: 0; /* Removed negative margin for cleaner spacing */
+    margin-bottom: 20px;
+    text-align: left;
+    width: 90%;
+    max-width: 400px;
+    font-family: 'Roboto', sans-serif; /* Change font to Roboto (or any other preferred font) */
+    line-height: 1.6; /* Adds better line spacing for readability */
+}
+
+/* Styling for Unordered List */
+.instructions ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px; /* Adds space before the list */
+}
+
+/* Styling for List Items */
+.instructions li {
+    margin-bottom: 15px; /* Adds space between each list item */
+}
+
+/* Bold Styling for Strong Text */
+.instructions strong {
+    font-weight: bold;
+}
+
+/* Highlighted Text in Red and Bold */
+.instructions .highlight {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* Container Styling */
+.container {
+    max-width: 400px; /* Limits the width on larger screens */
+    background-color: #ffffff; /* White background for content */
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Darker shadow for stronger depth */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #0056b3; /* NIOS blue */
+    font-weight: bold;
+}
+
+/* Input Section */
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    font-weight: 600;
+}
+
+input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Scales with container */
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #007bff; /* Blue outline on focus */
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    padding: 12px;
+    background-color: #007bff; /* NIOS blue */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Error Message */
+.error {
+    color: #d9534f; /* Bootstrap red */
+    font-size: 12px;
+    margin-top: -10px;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Result Box */
+#result-box {
+    padding: 20px;
+    background-color: #f0f8ff; /* Light blue for success */
+    border: 1px solid #007bff;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #1a1a1a;
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    input {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .instructions {
+        font-size: 1rem;
+        margin-top: -10rem; /* Slightly smaller for mobile */
+    }
+    .instructions li {
+        margin-bottom: 12px; /* Slightly less spacing between list items on mobile */
+    }
+}
